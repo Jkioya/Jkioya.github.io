@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f8ff; /* Fondo claro */
+    color: #333;
+}
+
+header h1 {
+    color: #1e90ff; /* Color azul para el título */
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+}
+/* From Uiverse.io by csemszepp */ 
+
+
+
+
+
+
+
+

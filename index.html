@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI</title>
+    <!-- Enlace a Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tu propio CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-padding-top: 100px; /* Ajusta el desplazamiento para que los títulos sean visibles */
+            scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
+        }
+        
+        .titulo-principal {
+            background-color: #800080;
+            color: white;
+            padding: 1rem;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+            padding-left: 60px;
+            font-family: "Times New Roman", Times, serif;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .seccion {
+            margin: 30px 0;
+        }
+        #indice {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            width: 250px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #indice a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        #indice a:hover {
+            background-color: #f0f0f0;
+        }
+        .autor-info {
+            position: fixed;
+            right: 20px;
+            top: 400px;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(180deg, #800080 0%, #4B0082 100%);
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .contenido-principal {
+            margin-top: 80px;
+            margin-right: 300px;
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            #indice, .autor-info {
+                position: static;
+                width: 100%;
+                margin: 10px auto;
+            }
+            
+            .contenido-principal {
+                margin: 80px 15px 0 15px;
+            }
+            
+            .titulo-principal {
+                padding-left: 15px;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo-principal">AQI</h1>
+    <div id="indice" style="right: 40px;">
+        <h4>Índice</h4>
+        <a href="#calidad-aire">Calidad del aire</a>
+        <a href="#que-es">¿Qué es la contaminación?</a>
+        <a href="#contaminantes">Contaminantes del aire</a>
+        <a href="#causas">Causas de la contaminación</a>
+        <a href="#consecuencias">Consecuencias en la salud</a>
+        <a href="#como-evitar">¿Cómo evitarla?</a>
+    </div>
+
+    <div class="autor-info" style="top: 450px; right: 40px;">
+        <h5>Autor</h5>
+        <p>Nombre: Josue Martinez Salto</p>
+        <p>Especialidad: Desarrollador de Software</p>
+        <p>Contacto: aj4502339@email.com</p>
+    </div>
+
+    <div class="contenido-principal">
+        <header class="container mt-5">
+            <h1 class="text-left text-dark" id="calidad-aire">Calidad del aire</h1>
+        </header>
+
+        <main class="container">
+            <section class="seccion">
+                <div class="texto-modificable" style="text-align: justify;">
+                  Te explicamos qué es la contaminación del aire, cuáles son sus contaminantes y causas. Además, sus consecuencias y cómo evitarla.
+                  <p><p></p>La calidad del aire es un factor fundamental para la salud y el bienestar de todos los seres vivos. El aire limpio y saludable no solo mejora nuestra calidad de vida, sino que también previene una serie de enfermedades respiratorias y cardiovasculares. Sin embargo, la contaminación del aire, proveniente de diversas fuentes como la industria, el transporte y la deforestación, está afectando cada vez más nuestro entorno y nuestra salud.
+                  <p></p> explicare qué es la contaminación del aire, cuáles son sus contaminantes y causas. Además, sus consecuencias y cómo evitarla.
+                </div>
+            </section>
+
+            <div class="text-center">
+                <img src="./imagenes/aire1.jpg" alt="Calidad del aire" class="img-fluid">
+            </div>
+
+            <div class="texto-modificable" style="text-align: justify;">
+            <section class="seccion">
+                <h2 class="text-dark" id="que-es">¿Qué es la contaminación del aire?</h2>
+                <div class="texto-modificable">
+                  <p>Se denomina contaminación ambiental a la presencia en el ambiente de cualquier agente (físico, químico o biológico) o bien de una combinación de varios agentes en lugares, formas y concentraciones tales que sean o puedan ser nocivos para la salud, la seguridad o para el bienestar de la población, o que puedan ser perjudiciales para la vida vegetal o animal, o impidan el uso normal de las propiedades y lugares de recreación y goce de los mismos. (OMS)</p>
+                  <p>El nombre de contaminación atmosférica se aplica por lo general a las alteraciones que tienen efectos perjudiciales sobre la salud de los seres vivos y los elementos materiales</p>
+                  <p>La contaminación del aire, se puede definir como la presencia en la atmósfera de uno o más elementos, en cantidad suficiente, con ciertas características y una permanencia determinada, que pueda causar efectos indeseables tanto en el ser humano, la vegetación, los animales, las construcciones y los monumentos. Estos elementos pueden ser polvo, olores, humos o vapor.</p>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <h2 class="text-dark" id="contaminantes">¿Cuáles son los contaminantes del aire?</h2>
+                <div class="texto-modificable">
+                  <p></p>El dióxido de carbono (CO2) y otros gases que contribuyen al efecto invernadero, como el metano (CH4).</p>
+                  <p>El monóxido de carbono (CO), un gas altamente tóxico y perjudicial para los seres vivos.</p>
+                  <p>Los óxidos de azufre (SOx) y de nitrógeno (NOx), que, al ingresar en la atmósfera, reaccionan con el vapor de agua y forman ácido sulfúrico, dando lugar a las lluvias ácidas.</p>
+                  <p>Los CFC (Clorofluorocarbonos), compuestos que fueron ampliamente utilizados en aerosoles y refrigerantes, pero que alteraban el equilibrio de la capa de ozono.</p>
+                  <p></p>El ozono (O3), que, aunque se encuentra de forma natural en una capa específica de la atmósfera, su aumento en otras capas provoca su descomposición cuando es expuesto a la radiación solar, liberando grandes cantidades de energía y causando un calentamiento artificial de la atmósfera.</p>
+                </div>
+            </section>
+            <section class="seccion">
+                <h2 class="text-dark" id="causas">Causas de la contaminación del aire</h2>
+                <div class="texto-modificable">
+                    
+
+                    <h4 class="text-dark">Hogares</h4>
+                    <div class="texto-modificable">
+                        La principal fuente de contaminación del aire en el interior de los hogares es la quema de madera y combustibles fósiles o basados en biomasa para cocinar, calentar o iluminar. Alrededor de 3,8 millones de muertes prematuras son causadas por la contaminación del aire en interiores cada año, la gran mayoría de ellas en el mundo en desarrollo.
+                        <p></p>De 193 países, 97 han logrado que 85% de los hogares tengan acceso a fuentes de energía más limpias. Pero aún 3.000 millones de personas continúan utilizando combustibles sólidos y fuego para cocinar, calentarse e iluminar. La adopción de estufas o calentadores más limpios y modernos puede reducir los riesgos de enfermedades y salvar vidas.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imagenes/foco.jpg" alt="Calidad del aire" class="img-fluid">
+                    </div>
+
+                    <h4 class="text-dark"><p></p>Indrustria</h4>
+                    <div class="texto-modificable">
+                        En muchos países, la generación de energía es una fuente principal de contaminación del aire. Las centrales eléctricas que queman carbón son un emisor importante, y las plantas con base en diésel son una preocupación creciente en las áreas desconectadas de la red. Los procesos industriales y el uso de solventes en las industrias químicas y mineras también contaminan el aire.</p>
+                        <p></p>Las políticas y los programas destinados a aumentar la eficiencia energética y la producción a partir de fuentes renovables tienen un impacto directo en la calidad del aire de un país. Actualmente, 82 de 193 países tienen incentivos que promueven la inversión en energías renovables, producción más limpia, eficiencia energética y control de la contaminación.</p>
+                    </div>
+
+                    <div class="text-center"></div>
+                        <img src="./imagenes/industria.jpg" alt="Calidad del aire" class="img-fluid">
+                    </div>
+
+                    <h4 class="text-dark"><p></p>Transporte</h4>
+                    <div class="texto-modificable">
+                        El creciente sector del transporte es responsable de casi una cuarta parte de todas las emisiones de dióxido de carbono relacionadas con la energía, a las cuales se atribuyen casi 400.000 muertes prematuras. Alrededor de la mitad de todas las muertes por contaminación del aire causadas por el transporte se deben a las emisiones de diésel. Por otro lado, las personas que viven más cerca de las principales arterias de tránsito tienen hasta 12% más de probabilidades de ser diagnosticadas con demencia.
+                        <p></p>Reducir las emisiones de los vehículos es una intervención importante para mejorar la calidad del aire, especialmente en las áreas urbanas. Las políticas y normas que requieren el uso de combustibles más limpios y estándares avanzados de emisiones de los vehículos pueden ayudar a minimizar la contaminación causada por el transporte hasta en 90% o más.</p>
+                    </div>
+                    <div class="text-center"></div>
+                        <img src="./imagenes/vehiculos.jpg" alt="Calidad del aire" class="img-fluid">
+                    </div>
+                    
+                    <h4 class="text-dark"><p></p>Agricultura</h4>
+                    <div class="texto-modificable" style="text-align: justify;">
+                        Las fuentes principales de contaminación del aire provenientes de la agricultura incluyen el ganado, que produce metano y amoníaco, y la quema de residuos agrícolas. Las emisiones de metano contribuyen a la formación de ozono a nivel del suelo, que causa el asma y otras enfermedades respiratorias. El metano también es un gas de efecto invernadero con un impacto hasta 34 veces más potente que el dióxido de carbono en un período de 100 años. Alrededor de 24% de todos los gases de efecto invernadero emitidos en el mundo provienen de la agricultura, la silvicultura y otros usos de la tierra.
+
+                        <p></p>Existen muchas maneras ayudar a reducir la contaminación del aire de esta fuente. Las personas pueden disminuir su consumo de carne y optar por una dieta basada en vegetales, y minimizar el desperdicio de alimentos para evitar crear una demanda innecesaria de comida en el mercado. Por su parte, los agricultores pueden reducir el metano del ganado al optimizar la digestibilidad de los alimentos y mejorar el pastoreo y la gestión de pastizales.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="./imagenes/agricultiura.jpg" alt="Calidad del aire" class="img-fluid">
+                    </div>
+
+                    <h4 class="text-dark"><p></p>Residuos</h4>
+                    <div class="texto-modificable" style="text-align: justify;">
+                        La quema de residuos a cielo abierto y los desechos orgánicos en los vertederos liberan a la atmósfera dioxinas nocivas, furanos, metano y material particulado como el carbono negro. A nivel mundial, se estima que 40% de los residuos se quema al aire libre, un problema que resulta más grave en las regiones que se están urbanizando y en los países en desarrollo. La quema a cielo abierto de residuos agrícolas y/o municipales se practica en 166 de 193 países.
+
+                        <p></p>La mejora en la recolección, la separación y la eliminación de desechos sólidos reduce la cantidad de materiales que se queman o se depositan en vertederos. Separar los desechos orgánicos y convertirlos en compost o bioenergía mejora la fertilidad del suelo y proporciona una fuente de energía alternativa. Reducir el volumen de alimentos que se pierde o desperdicia también puede mejorar la calidad del aire.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="./imagenes/residuos.jpg" alt="Calidad del aire" class="img-fluid">
+                    </div>
+
+            <section class="seccion">
+                <h2 class="text-dark" id="consecuencias">Consecuencias de la contaminación del aire en la salud</h2>
+                <div class="texto-modificable" style="text-align: justify;">
+                    <p></p>Las consecuencias de la contaminación del aire en la salud son extensas y afectan múltiples sistemas del cuerpo. En el sistema respiratorio, la exposición prolongada a contaminantes como PM2.5, dióxido de azufre y ozono puede agravar condiciones como el asma y aumentar el riesgo de enfermedades crónicas como la EPOC y bronquitis crónica. En niños, la contaminación puede afectar el desarrollo pulmonar, lo que condiciona su salud de por vida.</p>
+                    <p>En el sistema cardiovascular, estos contaminantes provocan inflamación en los vasos sanguíneos, aumentando la probabilidad de hipertensión, aterosclerosis e incluso infartos. Las partículas finas pueden llegar a la circulación y generar problemas cardíacos graves, particularmente en personas con factores de riesgo como hipertensión o diabetes.</p>
+                    
+                    <p></p>El cerebro también se ve afectado: algunos contaminantes atraviesan la barrera hematoencefálica y provocan inflamación, lo que afecta las funciones cognitivas y puede acelerar enfermedades neurodegenerativas como el Alzheimer y el Parkinson. En niños, esto impacta el desarrollo cognitivo, y en adultos mayores, aumenta el riesgo de deterioro mental.</p>
+                    
+                    <p>Además, la contaminación debilita el sistema inmunológico, haciendo al organismo más vulnerable a infecciones respiratorias. En el aspecto mental, la exposición a largo plazo a aire contaminado está asociada a niveles mayores de ansiedad y depresión, y puede reducir la calidad de vida de las personas al limitar sus actividades al aire libre.</p>
+                    
+                    <p></p>Finalmente, ciertos grupos como niños, ancianos y personas con enfermedades preexistentes son especialmente vulnerables, y en las mujeres embarazadas, la exposición puede afectar el desarrollo fetal. Los efectos económicos también son significativos: los costos en atención médica y la reducción en productividad impactan de manera amplia a la sociedad.</p>
+                </div>
+            </section>
+            <div class="text-center">
+                <img src="./imagenes/pulmones.jpg" alt="Calidad del aire" class="img-fluid">
+            </div>
+            <section class="seccion">
+                <h2 class="text-dark" id="como-evitar">¿Cómo evitar la contaminación del aire?</h2>
+                <div class="texto-modificable" style="text-align: justify;">
+               
+    <p></p>Evitar la contaminación del aire requiere una combinación de acciones a nivel individual, comunitario y gubernamental. A nivel personal, una de las medidas más efectivas es reducir el uso del automóvil privado, ya que los vehículos de combustión interna son grandes emisores de contaminantes como el dióxido de nitrógeno y el monóxido de carbono. Optar por alternativas como caminar, usar la bicicleta o el transporte público no solo disminuye la cantidad de emisiones, sino que también alienta un estilo de vida más saludable. En áreas urbanas, el uso compartido de vehículos o la transición a automóviles eléctricos es otra forma de reducir el impacto de las emisiones vehiculares.</p>
+
+    <p></p>Otra forma de contribuir es ahorrando energía en el hogar, ya que una menor demanda de electricidad significa menos emisiones de las plantas generadoras. Apagar luces y dispositivos cuando no se usan, así como elegir electrodomésticos de bajo consumo, son pequeñas acciones que, multiplicadas, pueden tener un impacto significativo. En climas fríos, mantener una buena aislación en el hogar ayuda a reducir la necesidad de calefacción, mientras que en climas cálidos, una ventilación adecuada puede minimizar el uso de aire acondicionado.</p>
+
+    <p></p>La adopción de fuentes de energía renovable, como la energía solar o eólica, es una de las soluciones más efectivas a largo plazo para reducir la contaminación del aire. Muchos países están invirtiendo en energías limpias que no generan emisiones contaminantes y que pueden abastecer a comunidades enteras. A nivel local, algunas personas optan por instalar paneles solares en sus hogares, lo que reduce la dependencia de la electricidad de fuentes contaminantes.</p>
+
+    <p></p>En la industria, es esencial implementar regulaciones más estrictas que controlen la emisión de gases y partículas nocivas. Las empresas pueden adoptar tecnologías de filtración y sistemas de captura de carbono que ayudan a reducir la cantidad de contaminantes liberados en la atmósfera. La promoción de una economía circular también es fundamental, pues fomenta la reducción de desechos y el reciclaje, evitando que materiales peligrosos se dispersen en el ambiente.</p>
+                </div>
+            </section>
+
+            <div class="text-center">
+                <img src="./imagenes/panel.jpg" alt="Calidad del aire" class="img-fluid">
+            </div>
+        </div>
